@@ -1,0 +1,54 @@
+2023-01-15T17:44:46.571-06:00  WARN 4004 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/yarbr/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/yarbr/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-01-15T17:44:46.585-06:00  INFO 4004 --- [main] b.SpringBootRedisBiscuitApplicationTests : Starting SpringBootRedisBiscuitApplicationTests using Java 19.0.1 with PID 4004 (started by yarbr in C:\Users\yarbr\Downloads\SpringBoot-Redis-Biscuit\SpringBoot-Redis-Biscuit)
+2023-01-15T17:44:46.586-06:00  INFO 4004 --- [main] b.SpringBootRedisBiscuitApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-01-15T17:44:46.895-06:00  INFO 4004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-15T17:44:46.896-06:00  INFO 4004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-15T17:44:46.913-06:00  INFO 4004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-01-15T17:44:47.705-06:00  INFO 4004 --- [main] b.SpringBootRedisBiscuitApplicationTests : Started SpringBootRedisBiscuitApplicationTests in 1.277 seconds (process running for 1.787)
+2023-01-15T17:44:56.152-06:00  WARN 36304 --- [main] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/yarbr/.m2/repository/org/json/json/20220320/json-20220320.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/yarbr/.m2/repository/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-01-15T17:44:56.160-06:00  INFO 36304 --- [main] b.SpringBootRedisBiscuitApplicationTests : Starting SpringBootRedisBiscuitApplicationTests using Java 19.0.1 with PID 36304 (started by yarbr in C:\Users\yarbr\Downloads\SpringBoot-Redis-Biscuit\SpringBoot-Redis-Biscuit)
+2023-01-15T17:44:56.161-06:00  INFO 36304 --- [main] b.SpringBootRedisBiscuitApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2023-01-15T17:44:56.473-06:00  INFO 36304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-15T17:44:56.474-06:00  INFO 36304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-15T17:44:56.492-06:00  INFO 36304 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2023-01-15T17:44:57.295-06:00  INFO 36304 --- [main] b.SpringBootRedisBiscuitApplicationTests : Started SpringBootRedisBiscuitApplicationTests in 1.304 seconds (process running for 1.769)
+2023-01-15T17:45:01.507-06:00  INFO 36288 --- [main] c.b.SpringBootRedisBiscuitApplication    : Starting SpringBootRedisBiscuitApplication using Java 19.0.1 with PID 36288 (C:\Users\yarbr\Downloads\SpringBoot-Redis-Biscuit\SpringBoot-Redis-Biscuit\target\classes started by yarbr in C:\Users\yarbr\Downloads\SpringBoot-Redis-Biscuit\SpringBoot-Redis-Biscuit)
+2023-01-15T17:45:01.508-06:00  INFO 36288 --- [main] c.b.SpringBootRedisBiscuitApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-01-15T17:45:01.834-06:00  INFO 36288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-15T17:45:01.835-06:00  INFO 36288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-15T17:45:01.855-06:00  INFO 36288 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-01-15T17:45:02.171-06:00  INFO 36288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-01-15T17:45:02.177-06:00  INFO 36288 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-15T17:45:02.177-06:00  INFO 36288 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-15T17:45:02.228-06:00  INFO 36288 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-15T17:45:02.228-06:00  INFO 36288 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 688 ms
+2023-01-15T17:45:02.757-06:00  INFO 36288 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-01-15T17:45:02.762-06:00  INFO 36288 --- [main] c.b.SpringBootRedisBiscuitApplication    : Started SpringBootRedisBiscuitApplication in 1.485 seconds (process running for 1.678)
+2023-01-15T17:45:09.349-06:00  INFO 4132 --- [main] c.b.SpringBootRedisBiscuitApplication    : Starting SpringBootRedisBiscuitApplication using Java 19.0.1 with PID 4132 (C:\Users\yarbr\Downloads\SpringBoot-Redis-Biscuit\SpringBoot-Redis-Biscuit\target\classes started by yarbr in C:\Users\yarbr\Downloads\SpringBoot-Redis-Biscuit\SpringBoot-Redis-Biscuit)
+2023-01-15T17:45:09.351-06:00  INFO 4132 --- [main] c.b.SpringBootRedisBiscuitApplication    : No active profile set, falling back to 1 default profile: "default"
+2023-01-15T17:45:09.717-06:00  INFO 4132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2023-01-15T17:45:09.719-06:00  INFO 4132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-01-15T17:45:09.742-06:00  INFO 4132 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2023-01-15T17:45:10.055-06:00  INFO 4132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-01-15T17:45:10.060-06:00  INFO 4132 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-01-15T17:45:10.060-06:00  INFO 4132 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-01-15T17:45:10.111-06:00  INFO 4132 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-01-15T17:45:10.111-06:00  INFO 4132 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 725 ms
+2023-01-15T17:45:10.675-06:00  INFO 4132 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-01-15T17:45:10.681-06:00  INFO 4132 --- [main] c.b.SpringBootRedisBiscuitApplication    : Started SpringBootRedisBiscuitApplication in 1.627 seconds (process running for 1.867)
