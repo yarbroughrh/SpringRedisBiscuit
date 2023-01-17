@@ -1,10 +1,13 @@
 package com.biscuitswithjelly.repository;
 
-import ch.qos.logback.classic.Logger;
+import com.biscuitswithjelly.model.Blog;
 import com.biscuitswithjelly.model.User;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.validation.BindingResult;
+import org.springframework.validation.FieldError;
 
 import java.util.List;
 
@@ -21,8 +24,15 @@ public class UserDaoImpl implements UserDao {
 
 
     @Override
-    public boolean saveUser(User user) {
-        System.out.println("Saving user: " + user);
+    public boolean saveUser(@Valid User user, BindingResult bindingResult) {
+        if (bindingResult.hasErrors()) {
+            // handle validation errors
+            List<FieldError> errors = bindingResult.getFieldErrors();
+            for (FieldError error : errors) {
+                System.out.println(error.getField() + ": " + error.getDefaultMessage());
+            }
+            return false;
+        }
         try {
             redisTemplate.opsForHash().put(KEY, user.getId().toString(), user);
             System.out.println("User saved successfully: " + user);
@@ -68,5 +78,26 @@ public class UserDaoImpl implements UserDao {
             e.printStackTrace();
             return false;
         }
+    }
+
+    @Override
+    public List<Blog> fetchBlogsByUserId(Long id) {
+        if (id == null || id < 0) {
+            throw new IllegalArgumentException("Invalid id provided");
+        }
+        List<Blog> blogs = (List<Blog>) redisTemplate.opsForHash().get(KEY, id);
+        return blogs;
+    }
+
+    @Override
+    public boolean saveBlog(Blog blog, Long userId) {
+        redisTemplate.opsForHash().put(KEY, userId, blog);
+        return true;
+    }
+
+    @Override
+    public boolean deleteBlog(Long id) {
+        redisTemplate.opsForHash().delete(KEY, id);
+        return true;
     }
 }
