@@ -33,12 +33,11 @@ public class UserDaoImpl implements UserDao {
             }
             return false;
         }
+        //passing in hash, hashkey, and hash value
         try {
             redisTemplate.opsForHash().put(KEY, user.getId().toString(), user);
-            System.out.println("User saved successfully: " + user);
             return true;
         } catch (Exception e) {
-            System.out.println(user);
             e.printStackTrace();
             return false;
         }

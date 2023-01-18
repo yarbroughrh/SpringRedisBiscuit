@@ -10,5 +10,5 @@ public class Blog implements Serializable {
     private Long id;
     private String title;
     private String content;
-    // getters and setters
+
 }
